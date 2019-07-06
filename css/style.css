@@ -1,0 +1,135 @@
+body .wrapper main .hero header button, body .wrapper main .hero .landing .landing-left button {
+  font-size: 14px;
+  padding: 15px 40px;
+  font-weight: bold;
+  background-color: #ff52bf;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+body .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body .wrapper main .hero {
+  background: url(../images/bg-hero-desktop.svg) #ebfbff;
+  background-size: cover;
+  padding: 50px 100px;
+}
+
+body .wrapper main .hero header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+body .wrapper main .hero header button {
+  background-color: white;
+}
+
+body .wrapper main .hero .landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .wrapper main .hero .landing .landing-left {
+  width: 50%;
+  padding-right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wrapper main .hero .landing .landing-left > * {
+  margin-bottom: 30px;
+}
+
+body .wrapper main .hero .landing .landing-left h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+body .wrapper main .hero .landing .landing-left button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: white;
+}
+
+body .wrapper main .hero .landing .landing-right {
+  width: 50%;
+}
+
+body .wrapper main .hero .landing .landing-right img {
+  width: 100%;
+}
+
+body .wrapper main .articles {
+  padding: 100px 100px;
+}
+
+body .wrapper main .articles article {
+  padding: 50px 50px 50px 150px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wrapper main .articles article > * > h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+body .wrapper main .articles article .left {
+  width: 45%;
+}
+
+body .wrapper main .articles article .right {
+  width: 45%;
+}
+
+body .wrapper main .articles article > * > img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

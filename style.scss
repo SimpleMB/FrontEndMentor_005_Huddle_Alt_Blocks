@@ -1,0 +1,115 @@
+// Colors
+$primary-pink-color: hsl(322, 100%, 66%);
+$neutral-verypalecyan-color: hsl(193, 100%, 96%);
+$neutral-verydarkcyan-color: hsl(192, 100%, 9%);
+$neutral-grayishblue-color: hsl(208, 11%, 55%);
+
+// Buttons style
+%buttons {
+  font-size: 14px;
+  padding: 15px 40px;
+  font-weight: bold;
+  background-color: $primary-pink-color;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba($color: #000000, $alpha: 0.15);
+  font-family: "Open Sans", sans-serif;
+}
+
+//Font for headings
+// Poppins 600
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    main {
+      .hero {
+        background: url(../images/bg-hero-desktop.svg)
+          $neutral-verypalecyan-color;
+        background-size: cover;
+        padding: 50px 100px;
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 50px;
+          button {
+            @extend %buttons;
+            background-color: white;
+          }
+        }
+        .landing {
+          display: flex;
+          .landing-left {
+            width: 50%;
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            > * {
+              margin-bottom: 30px;
+            }
+            h1 {
+              font-family: "Poppins", sans-serif;
+              font-weight: 600;
+              font-size: 40px;
+            }
+            button {
+              @extend %buttons;
+              align-self: flex-start;
+              color: white;
+            }
+          }
+          .landing-right {
+            width: 50%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .articles {
+        padding: 100px 100px;
+        article {
+          padding: 50px 50px 50px 150px;
+          border-radius: 15px;
+          box-shadow: 0 0 7px rgba($color: #000000, $alpha: 0.2);
+          margin-bottom: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          > * > h3 {
+            font-size: 25px;
+            margin-bottom: 30px;
+          }
+          .left {
+            width: 45%;
+          }
+          .right {
+            width: 45%;
+          }
+          > * > img {
+            width: 100%;
+          }
+        }
+      }
+      .call-action {
+      }
+      .footer {
+      }
+    }
+  }
+}
