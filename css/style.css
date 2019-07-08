@@ -1,4 +1,4 @@
-body .wrapper main .hero header button, body .wrapper main .hero .landing .landing-left button {
+body .wrapper main .hero header button, body .wrapper main .hero .landing .landing-left button, body .wrapper main .call-action .frame button {
   font-size: 14px;
   padding: 15px 40px;
   font-weight: bold;
@@ -8,6 +8,15 @@ body .wrapper main .hero header button, body .wrapper main .hero .landing .landi
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
           box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
   font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .wrapper main .hero header button:hover, body .wrapper main .hero .landing .landing-left button:hover, body .wrapper main .call-action .frame button:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 * {
@@ -30,7 +39,7 @@ body .wrapper {
 body .wrapper main .hero {
   background: url(../images/bg-hero-desktop.svg) #ebfbff;
   background-size: cover;
-  padding: 50px 100px;
+  padding: 100px 100px;
 }
 
 body .wrapper main .hero header {
@@ -57,8 +66,8 @@ body .wrapper main .hero .landing {
 }
 
 body .wrapper main .hero .landing .landing-left {
-  width: 50%;
-  padding-right: 100px;
+  width: 40%;
+  padding-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +97,7 @@ body .wrapper main .hero .landing .landing-left button {
 }
 
 body .wrapper main .hero .landing .landing-right {
-  width: 50%;
+  width: 60%;
 }
 
 body .wrapper main .hero .landing .landing-right img {
@@ -96,15 +105,15 @@ body .wrapper main .hero .landing .landing-right img {
 }
 
 body .wrapper main .articles {
-  padding: 100px 100px;
+  padding: 175px 100px 100px;
 }
 
 body .wrapper main .articles article {
-  padding: 50px 50px 50px 150px;
+  padding: 50px 50px 50px 100px;
   border-radius: 15px;
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,8 +126,12 @@ body .wrapper main .articles article {
 }
 
 body .wrapper main .articles article > * > h3 {
-  font-size: 25px;
+  font-size: 32px;
   margin-bottom: 30px;
+}
+
+body .wrapper main .articles article > * > p {
+  font-size: 16px;
 }
 
 body .wrapper main .articles article .left {
@@ -131,5 +144,256 @@ body .wrapper main .articles article .right {
 
 body .wrapper main .articles article > * > img {
   width: 100%;
+}
+
+body .wrapper main .articles article:last-child {
+  margin-bottom: 0;
+}
+
+body .wrapper main .call-action .frame {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  z-index: 100;
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+}
+
+body .wrapper main .call-action .frame button {
+  color: white;
+  font-size: 18px;
+  padding: 20px 70px;
+  margin-top: 30px;
+}
+
+body .wrapper main .footer {
+  padding: 150px 100px 50px;
+  color: #aaa;
+  font-size: 15px;
+  background-color: #00252e;
+  color: #fff;
+}
+
+body .wrapper main .footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0;
+}
+
+body .wrapper main .footer .links .contact {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-right: 50px;
+}
+
+body .wrapper main .footer .links .contact > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+body .wrapper main .footer .links .contact > * i {
+  padding-top: 15px;
+}
+
+body .wrapper main .footer .links .contact > * > * {
+  padding: 10px;
+}
+
+body .wrapper main .footer .links .links3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .wrapper main .footer .links .links3 a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+body .wrapper main .footer .links .social-media {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .wrapper main .footer .links .social-media i {
+  margin-right: 5px;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .wrapper main .footer .links .social-media i:hover {
+  color: #00252e;
+  background-color: white;
+  cursor: pointer;
+}
+
+body .wrapper main .footer .copyrights {
+  font-size: 14px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 1150px) {
+  .social-media i {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body .wrapper main .hero {
+    padding: 50px;
+  }
+  body .wrapper main .hero .landing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .wrapper main .hero .landing .landing-left {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  body .wrapper main .hero .landing .landing-left h1 {
+    font-size: 30px;
+  }
+  body .wrapper main .hero .landing .landing-left button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 70px;
+  }
+  body .wrapper main .hero .landing .landing-right {
+    width: 100%;
+  }
+  body .wrapper main .articles {
+    padding: 100px 50px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  body .wrapper main .hero header img {
+    width: 50%;
+  }
+  body .wrapper main .hero header button {
+    padding: 10px;
+  }
+  body .wrapper main .hero .landing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .wrapper main .hero .landing .landing-left {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  body .wrapper main .hero .landing .landing-left h1 {
+    font-size: 30px;
+  }
+  body .wrapper main .hero .landing .landing-left button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 70px;
+  }
+  body .wrapper main .hero .landing .landing-right {
+    width: 100%;
+  }
+  body .wrapper main .articles {
+    padding: 50px;
+  }
+  body .wrapper main .articles article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 25px;
+  }
+  body .wrapper main .articles article > * > * {
+    margin-bottom: 30px;
+  }
+  body .wrapper main .articles article .left, body .wrapper main .articles article .right {
+    width: 100%;
+    text-align: center;
+  }
+  body .wrapper main .articles article .left p, body .wrapper main .articles article .right p {
+    font-size: 18px;
+  }
+  body .wrapper main .call-action {
+    padding: 0 50px;
+  }
+  body .wrapper main .call-action .frame {
+    padding: 25px 50px;
+    width: 100%;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  body .wrapper main .call-action .frame h1 {
+    font-size: 16px;
+  }
+  body .wrapper main .call-action .frame button {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+  body .wrapper main .footer {
+    padding: 150px 50px 50px;
+  }
+  body .wrapper main .footer .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .wrapper main .footer .links .contact {
+    padding-bottom: 50px;
+  }
+  body .wrapper main .footer .links .social-media {
+    padding-top: 50px;
+    text-align: center;
+  }
+  body .wrapper main .footer .links .social-media i {
+    display: inline-block;
+  }
+  body .wrapper main .footer .copyrights {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
